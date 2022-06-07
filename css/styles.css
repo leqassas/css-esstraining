@@ -1,1 +1,182 @@
+/* #73ead2 text, #41209a bg 
+#20051f text #fe93bd bg
+#1c022d text #cf547a bg
+#fbfcc7 text #3870d1 bg
+#85f0eb text #a32d24 bg
 
+
+*/
+img {
+    width: 300px;
+}
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    margin: 0; 
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15p;
+    line-height: 1.5;
+}
+h2 {
+    margin: 0;
+    line-height: 1;
+    font-weight: 200;
+}
+h1 {
+    font-size: 90px;
+    margin: 10px 0px 10px;
+    font-weight: 400;
+
+}
+.content-wrap {
+    max-width: 900px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.untouched {
+    font-size: 30px;
+}
+
+h1 {
+    font-family: 'DM Serif Display', sans-serif;
+    font-weight: 100;
+    margin: 0;
+}
+h2 {
+    font-family: 'Google Sans', sans-serif;
+    font-weight: 100;
+    font-size: 50px;
+    margin: 0;
+}
+header {
+    background-color: #2f3061;
+    color: #F7FFF7;
+}
+#strip {
+    width: 100%;
+    height: 300px;
+    background-color: darkred;
+    
+}
+.projects {
+    background: #F2EBE9;
+    color: #7C3E66;
+}
+.projects a {
+    color:#F2EBE9;
+    background-color:#2f3061cc;
+    text-decoration: none;
+    padding: 9px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.projects a:hover {
+    background-color: #7C3E66;
+
+}
+.project-item {
+    overflow: hidden;
+    padding: 25px 0;
+}
+
+.project-item h3 {
+    margin-top: 0;
+}
+.work-experience {
+    background: #F8ECD1;
+    color: #85586F;
+}
+
+a {
+    color: #A0BCC2 
+}
+
+a:hover {
+    color: #ffffff 
+}
+
+h3 { 
+    margin-bottom: 0;   
+}
+.item-details h3 + p {
+    font-style: italic;
+}
+.item-details h3 ~ p {
+    margin: 0; 
+}
+.divider > section {
+    border-bottom: 1px dashed #343434;
+}
+.divider > section :last-of-type{
+    border-bottom: none;
+}
+.education {
+    background-image: url(../images/joanna-kosinska-unsplash.jpg);
+    background-size: cover;
+    background-position: top right;
+    padding-bottom: 100px;
+    color:#111111
+}
+.education p {
+    width: 60%;
+}
+footer {
+    background: #2f3061
+}
+.contact-list {
+    list-style-type: none;
+    padding: 0%;
+ 
+}
+.contact-list a {
+    display: inline-block;
+}
+#footer {
+    color: #F7FFF7;
+}
+/* responsive styles */
+@media screen and (min-width:800px) {
+    header, footer {
+        text-align: center;
+    }
+    .project-item img {
+        float: left;
+        margin-right: 20px;
+    }
+    h1 {
+        margin-bottom: 15px;
+    }
+    .job-item {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 20px;
+    }   
+    .contact-list{
+        display:flex;
+        justify-content: center;
+    }
+    .contact-list a {
+        padding: 15px;}
+}
+@media screen and (max-width: 799px){
+    h1 {
+        font-size: 75px;
+        margin-bottom: 20px;
+    }
+    h1, h2 {
+        line-height: 1.5;
+    }
+    .contact-list a {
+        padding: 5px;
+    }
+
+
+}
